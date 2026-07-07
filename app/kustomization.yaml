@@ -17,4 +17,4 @@ patches:
            my-custom-annotation.foo/bar: baz
     target:
       kind: ServiceAccount
-      name: svc-argo-test
+      name: demo-sa
