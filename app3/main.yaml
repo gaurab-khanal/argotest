@@ -33,7 +33,8 @@ spec:
   selector:
     app: nginx-synced
   ports:
-    - port: 80
+    - name: http
+      port: 80
       targetPort: 80
 ---
 apiVersion: gateway.networking.k8s.io/v1
@@ -42,7 +43,7 @@ metadata:
   name: nginx-gateway
   namespace: nginx-synced
 spec:
-  gatewayClassName: nginx
+  gatewayClassName: eg
   listeners:
     - name: http
       protocol: HTTP
