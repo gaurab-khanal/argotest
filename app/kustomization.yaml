@@ -12,7 +12,7 @@ patches:
        apiVersion: v1
        kind: ServiceAccount
        metadata:
-         name: patch-annotation
+         name: demo-sa
          annotations:
            my-custom-annotation.foo/bar: baz
     target:
